@@ -4,21 +4,21 @@
 
 ### User
 
-- [] Login / Register
-- [] User can select their course to learn.
-- [] User can read the blog from other user.
-- [] User can create blog.
-- [] User can notice the notifications.
-- [] User can create campaigns.
-- [] User can edit campaigns.
-- [] User can delete campaigns.
+- [wip] Login / Register
+- [backlog] User can select their course to learn.
+- [backlog] User can read the blog from other user.
+- [backlog] User can create blog.
+- [backlog] User can notice the notifications.
+- [backlog] User can create campaigns.
+- [backlog] User can edit campaigns.
+- [backlog] User can delete campaigns.
 
 ### Admin
 
-- [] Login / Register
-- [] Admin can create course.
-- [] Admin can edit course.
-- [] Admin can delete course.
-- [] Admin can create notifications.
+- [backlog] Login / Register
+- [backlog] Admin can create course.
+- [backlog] Admin can edit course.
+- [backlog] Admin can delete course.
+- [backlog] Admin can create notifications.
 
 ## Non-Functional Requirement
