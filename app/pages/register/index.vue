@@ -74,6 +74,7 @@
             this.registerForm.displayname = this.registerForm.username;
           }
           console.log(this.registerForm);
+          this.$store.commit("ADD_USER", this.registerForm);
         }
       },
       reset() {

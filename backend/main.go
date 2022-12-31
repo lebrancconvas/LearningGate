@@ -3,9 +3,11 @@ package main
 import (
 	"net/http"
 	"github.com/gin-gonic/gin"
+	"github.com/gin-contrib/cors"
 )
 
 type User struct {
+	ID string `json: "id"` 
 	Username string `json: "username"`
 	Displayname string `json: "displayname"`
 	Password string `json: "password"`
@@ -39,6 +41,7 @@ func createUser(c *gin.Context) {
 func main() {
 	// Start the server 
 	router := gin.Default();
+	router.Use(cors.Default()); 
 	router.GET("/", getIndex);
 	router.GET("/api/v1/users", getUser); 
 	router.POST("/api/v1/users", createUser); 
