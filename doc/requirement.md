@@ -5,7 +5,7 @@
 ### User
 
 - [wip] Login / Register
-- [backlog] User can select their course to learn.
+- [wip] User can select their course to learn. 
 - [backlog] User can read the blog from other user.
 - [backlog] User can create blog.
 - [backlog] User can notice the notifications.
