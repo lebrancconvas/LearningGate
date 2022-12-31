@@ -24,10 +24,23 @@ func getUser(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, users); 
 }
 
+func createUser(c *gin.Context) {
+	var newUser User; 
+
+	if err := c.ShouldBindJSON(&newUser); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()});
+		return;
+	}
+
+	users = append(users, newUser);
+	c.IndentedJSON(http.StatusCreated, newUser); 
+}
+
 func main() {
 	// Start the server 
 	router := gin.Default();
 	router.GET("/", getIndex);
 	router.GET("/api/v1/users", getUser); 
+	router.POST("/api/v1/users", createUser); 
 	router.Run(":8000"); 
 }
