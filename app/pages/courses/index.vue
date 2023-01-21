@@ -64,8 +64,7 @@
     },
     methods: {
       viewCourse(id) {
-        const result = this.courses.filter(course => course.id === id);
-        console.log(result[0]);
+        this.$router.push({ path: `courses/${id}` });
       }
     }
   }
