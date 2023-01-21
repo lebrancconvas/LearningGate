@@ -1,32 +1,44 @@
-[
-	{
-		"id": 1,
-		"name": "History of World Economy",
-		"description": "Learning the history of world economy, Since the industrial revolution to the present day.",
-		"instructor": "Mr.Abdul Malai"
-	},
-	{
-		"id": 2,
-		"name": "Capitalist 101",
-		"description": "Learning the concept of capitalism and how it works.",
-		"instructor": "Mr. Mahid Bully"
-	},
-	{
-		"id": 3,
-		"name": "Socialist 101",
-		"description": "Learning the concept of socialism and how it works.",
-		"instructor": "Ms. Nahila Basutin"
-	},
-	{
-		"id": 4,
-		"name": "Social Development",
-		"description": "Learning the basic of Social Development in the social.",
-		"instructor": "Mr. Alexander S. Zhang"
-	},
-	{
-		"id": 5,
-		"name": "Union",
-		"description": "Learning the history and the concept of Union for workers",
-		"instructor": "Ms. Priscilla Wong"
-	}
-]
+{
+	"courses": [
+		{
+			"id": 1,
+			"name": "History of World Economy",
+			"description": "Learning the history of world economy, Since the industrial revolution to the present day.",
+			"instructor": "Mr.Abdul Malai",
+			"lessons": [
+				{
+					"title": "Lesson 1",
+					"content": "Lesson 1 Content"
+				},
+				{
+					"title": "Lesson 2",
+					"content": "Lesson 2 Content"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Capitalist 101",
+			"description": "Learning the concept of capitalism and how it works.",
+			"instructor": "Mr. Mahid Bully"
+		},
+		{
+			"id": 3,
+			"name": "Socialist 101",
+			"description": "Learning the concept of socialism and how it works.",
+			"instructor": "Ms. Nahila Basutin"
+		},
+		{
+			"id": 4,
+			"name": "Social Development",
+			"description": "Learning the basic of Social Development in the social.",
+			"instructor": "Mr. Alexander S. Zhang"
+		},
+		{
+			"id": 5,
+			"name": "Union",
+			"description": "Learning the history and the concept of Union for workers",
+			"instructor": "Ms. Priscilla Wong"
+		}
+	]
+}

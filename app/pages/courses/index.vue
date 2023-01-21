@@ -7,7 +7,7 @@
     </header>
     <section id="course-section">
       <div>
-        <v-card v-for="course in courses" :key="course.id" style="margin: 10px">
+        <v-card v-for="course in results" :key="course.id" style="margin: 10px">
           <v-card-title>
             <h2>{{ course.name }}</h2>
           </v-card-title>
@@ -25,42 +25,24 @@
 </template>
 
 <script>
+  import axios from 'axios';
   export default {
     data() {
       return {
-        courses: [
-          {
-            "id": 1,
-            "name": "History of World Economy",
-            "description": "Learning the history of world economy, Since the industrial revolution to the present day.",
-            "instructor": "Mr.Abdul Malai",
-          },
-          {
-            "id": 2,
-            "name": "Capitalist 101",
-            "description": "Learning the concept of capitalism and how it works.",
-            "instructor": "Mr. Mahid Bully"
-          },
-          {
-            "id": 3,
-            "name": "Socialist 101",
-            "description": "Learning the concept of socialism and how it works.",
-            "instructor": "Ms. Nahila Basutin"
-          },
-          {
-            "id": 4,
-            "name": "Social Development",
-            "description": "Learning the basic of Social Development in the social.",
-            "instructor": "Mr. Alexander S. Zhang"
-          },
-          {
-            "id": 5,
-            "name": "Union",
-            "description": "Learning the history and the concept of Union for workers",
-            "instructor": "Ms. Priscilla Wong"
-          }
-        ]
+        results: []
       }
+    },
+    created() {
+      const url = `http://localhost:9002/courses`;
+
+      axios.get(url)
+        .then(response => {
+          this.results = response.data.courses;
+        })
+        .catch(error => {
+          console.error(error);
+          console.log(`[ERROR] Fetching Data Error`);
+        })
     },
     methods: {
       viewCourse(id) {
