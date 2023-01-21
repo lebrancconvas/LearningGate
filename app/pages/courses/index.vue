@@ -5,6 +5,13 @@
         <h1>Course List</h1>
       </div>
     </header>
+    <section id="action-section">
+      <div>
+        <v-btn color="primary" @click="backToHomepage">
+          Back to Homepage
+        </v-btn>
+      </div>
+    </section>
     <section id="course-section">
       <div>
         <v-card v-for="course in results" :key="course.id" style="margin: 10px">
@@ -47,6 +54,9 @@
     methods: {
       viewCourse(id) {
         this.$router.push({ path: `courses/${id}` });
+      },
+      backToHomepage() {
+        this.$router.push({ path: "/" });
       }
     }
   }

@@ -5,6 +5,13 @@
         <h1>{{ courseData.name }}</h1>
       </div>
     </header>
+    <section id="action-section">
+      <div>
+        <v-btn color="primary" @click="backToCourseListPage">
+          Back to Course Page
+        </v-btn>
+      </div>
+    </section>
     <section id="course-detail-section">
       <div id="course-detail-heading">
         <h3>Course Detail</h3>
@@ -50,6 +57,11 @@
           console.error(err);
           console.log(`[ERROR] Fetching Data error.`);
         })
+    },
+    methods: {
+      backToCourseListPage() {
+        this.$router.push({ path: '/courses' });
+      }
     }
   }
 </script>
