@@ -20,25 +20,65 @@
 			"id": 2,
 			"name": "Capitalist 101",
 			"description": "Learning the concept of capitalism and how it works.",
-			"instructor": "Mr. Mahid Bully"
+			"instructor": "Mr. Mahid Bully",
+			"lessons": [
+				{
+					"title": "Lesson 1",
+					"content": "Lesson 1 Content"
+				},
+				{
+					"title": "Lesson 2",
+					"content": "Lesson 2 Content"
+				}
+			]
 		},
 		{
 			"id": 3,
 			"name": "Socialist 101",
 			"description": "Learning the concept of socialism and how it works.",
-			"instructor": "Ms. Nahila Basutin"
+			"instructor": "Ms. Nahila Basutin",
+			"lessons": [
+				{
+					"title": "Lesson 1",
+					"content": "Lesson 1 Content"
+				},
+				{
+					"title": "Lesson 2",
+					"content": "Lesson 2 Content"
+				}
+			]
 		},
 		{
 			"id": 4,
 			"name": "Social Development",
 			"description": "Learning the basic of Social Development in the social.",
-			"instructor": "Mr. Alexander S. Zhang"
+			"instructor": "Mr. Alexander S. Zhang",
+			"lessons": [
+				{
+					"title": "Lesson 1",
+					"content": "Lesson 1 Content"
+				},
+				{
+					"title": "Lesson 2",
+					"content": "Lesson 2 Content"
+				}
+			]
 		},
 		{
 			"id": 5,
 			"name": "Union",
 			"description": "Learning the history and the concept of Union for workers",
-			"instructor": "Ms. Priscilla Wong"
+			"instructor": "Ms. Priscilla Wong",
+			"lessons": [
+				{
+					"title": "Lesson 1",
+					"content": "Lesson 1 Content"
+				},
+				{
+					"title": "Lesson 2",
+					"content": "Lesson 2 Content"
+				}
+			] 
 		}
 	]
 }
