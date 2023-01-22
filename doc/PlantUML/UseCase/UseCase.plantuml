@@ -1,0 +1,21 @@
+@startuml LearningGate_UseCase 
+left to right direction 
+skinparam packageStyle rectangle
+
+actor User as u
+actor Admin as a 
+
+rectangle LearningGate {
+	u -- (Register) 
+	u -- (Login)
+	(Register) -- a
+	(Login) -- a
+	Register .> Login : <<Include>> 
+	u -- (Browse Course)
+	(Browse Course) <. (View Course) : <<Extend>>
+	u -- (Create Blog)  
+	(Create Blog) <. (Delete Blog) : <<Extend>> 
+	(Create Blog) <. (Edit Blog) : <<Extend>> 
+}
+
+@enduml
