@@ -1,0 +1,9 @@
+version: "3.0"
+
+services:
+  api:
+    build: .
+    ports: 
+      - 8002:8002
+    volumes:
+      - .:/usr/src/app 
