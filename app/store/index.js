@@ -3,7 +3,8 @@ import { v4 as uuidv4 } from 'uuid';
 
 export const state = () => ({
   users: [],
-  isLogin: false
+  isLogin: false,
+  playgroundMessage: "Ayo"
 });
 
 export const mutations = {
@@ -19,5 +20,8 @@ export const mutations = {
         console.error(err);
         console.log(`[ERROR] Posting Data error.`);
       })
+  },
+  CHANGE_MESSAGE(state, newMessage) {
+    state.playgroundMessage = newMessage;
   }
 };
