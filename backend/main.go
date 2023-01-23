@@ -45,5 +45,5 @@ func main() {
 	router.GET("/", getIndex);
 	router.GET("/api/v1/users", getUser); 
 	router.POST("/api/v1/users", createUser); 
-	router.Run(":8000"); 
+	router.Run(":8002"); 
 }
