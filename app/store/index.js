@@ -11,7 +11,7 @@ export const mutations = {
   ADD_USER(state, user) {
     const newUser = { id: uuidv4(), ...user };
     state.users.push(newUser);
-    const url = "http://localhost:8000/api/v1/users";
+    const url = "http://localhost:8002/api/v1/users";
     axios.post(url, newUser)
       .then(res => {
         console.log(res.data);
@@ -23,5 +23,8 @@ export const mutations = {
   },
   CHANGE_MESSAGE(state, newMessage) {
     state.playgroundMessage = newMessage;
+  },
+  LOGIN(state) {
+    state.isLogin = true;
   }
 };
